@@ -1,0 +1,62 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+body { background: #f4f4f4; padding: 20px; }
+
+/* The Grid: Automatically wraps products to the next line */
+.grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center; 
+}
+
+/* Base Card Style */
+.card { 
+    background: #fff; 
+    width: 260px; 
+    border-radius: 10px; 
+    border: 1px solid #ddd; 
+    position: relative; 
+    padding-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Tags & Icons */
+.off-tag { 
+    position: absolute; top: 0; left: 0; background: #ff9800; 
+    color: #fff; padding: 4px 12px; font-size: 12px; border-bottom-right-radius: 15px; 
+}
+.heart { position: absolute; top: 10px; right: 10px; color: #aaa; cursor: pointer; }
+.heart:hover {
+    color: red;
+}
+/* Image Area */
+.img-wrap { padding: 30px; text-align: center; }
+.img-wrap img { max-height: 120px; max-width: 100%; }
+
+/* Text Content */
+.info { padding: 0 15px; }
+.info h3 { font-size: 14px; color: #333; height: 40px; overflow: hidden; margin-bottom: 5px; }
+.brand { font-size: 12px; color: #999; margin-bottom: 8px; }
+
+/* Pricing */
+.price b { font-size: 18px; }
+.price del { color: #bbb; font-size: 13px; margin-left: 5px; }
+.save { color: #2e7d32; font-size: 12px; font-weight: bold; margin: 5px 0 15px; }
+.save span { background: #2e7d32; color: #fff; padding: 0 4px; border-radius: 50%; font-size: 10px; margin-right: 4px; }
+
+/* Size Selector */
+.opt { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #666; }
+.opt select { flex: 1; padding: 6px; border-radius: 6px; border: 1px solid #ccc; background: #fff; }
+.card a {
+    text-decoration: none; /* removes underline */
+    color: inherit;        /* keeps link color same as surrounding text */
+}
+
+/* Optional: hover effect on links */
+.card a:hover {
+    color: #16a34a; /* green accent on hover */
+}
